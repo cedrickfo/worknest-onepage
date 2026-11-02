@@ -1,0 +1,870 @@
+@import url('https://fonts.googleapis.com/css2?family=Finlandica+Headline:ital,wght@0,100..900;1,100..900&family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Rubik+Storm&display=swap');
+
+
+h1, h2, h3 , h4, a {
+
+    font-family: 'Rubik Storm' ;
+}
+
+/* Style général de la page */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+/* Conteneur principal qui limite la largeur du contenu et le centre */
+.container {
+    width: 95%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Suppression des styles par défaut des listes et des liens */
+ ul, a {
+    list-style: none;
+    padding: 0;    
+}
+
+/* Suppression du soulignement des liens */
+ a{
+
+    text-decoration: none;
+
+}
+
+/* Effet au survol des liens de navigation */
+ nav a:hover {
+    text-decoration: underline;
+    color: yellow;
+}
+
+/* Image de fond de la partie haute du site */
+#header-bg {
+
+    background-image: url(../images/imagedefond.png);
+    background-size: cover;
+    background-position: center;
+    height: 460px;
+    
+}
+
+/* Organisation du header : logo à gauche et navigation à droite */
+ header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    margin-bottom: 2em;
+}
+
+/* Style du logo */
+ a.logo {
+    display: flex;
+    
+    width: auto;
+    margin-left: 2px;
+    font-size: 2em;
+    display: inline-block;
+    color: white;
+}
+
+/* Couleur différente sur une partie du logo */
+ a.logo span {
+    color: yellow;
+    
+}
+
+/* Menu de navigation horizontal */
+ nav ul {
+    display: flex;
+    gap: 2em;
+    margin-right: 20px;
+}
+
+/* Style des liens du menu */
+ nav ul li a {
+    color: white;
+    font-size: 1.2em;
+}
+
+/* Section d’accueil / hero */
+ section.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: left;
+    padding: 2em 0;
+    color: white;
+    margin-left: 1em;
+    height: auto;  
+    font-size: 1.3em;
+}
+
+/* Premier paragraphe de la section hero */
+ section.hero p:nth-child(1) {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color: yellow;
+}
+
+/* Bouton de la section hero */
+ section.hero a {
+    background-color: yellow;
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    
+}
+
+/* Section espaces : disposition des cartes en ligne */
+section#espaces {
+    display: flex;
+    height: auto;
+    gap: 1em;
+    padding: 2em 0;
+}
+
+/* Titre et introduction de la section espaces */
+section#espaces header {
+   display: flex;
+   flex-direction: column;
+    justify-content:flex-start; 
+   align-items: flex-start;
+    font-size: 1.3em;
+    margin-bottom: 1em;
+    flex: 1 1 30%;
+    
+}
+
+/* Cartes de la section espaces */
+section#espaces article {
+    background-color: white;
+   /* padding: 1em;*/
+    border-radius: 5px;
+    flex: 1 1 27%;
+}
+
+/* Petit texte d’introduction de la section espaces */
+section#espaces header  p {
+    color: rgb(0, 102, 255);
+}
+
+/* Organisation interne des articles de la section espaces */
+section#espaces article {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    
+    height: auto;
+}
+
+/* Zone image dans chaque carte espace */
+section#espaces article figure {
+    flex: 1 1 50%;
+    margin: 0;
+    padding: 0;
+    
+    width: 100%;
+}
+
+/* Images des cartes espaces */
+section#espaces article figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    object-fit: cover;
+}
+
+/* Titres et textes des cartes espaces */
+section#espaces article h3, section#espaces article p {
+    margin: 0.5em 0;
+    font-size: 1.2em;
+    text-align: left;
+    padding: 0.5em;
+}
+
+/* Section concept : disposition en colonnes */
+.container section#concept {
+    display: flex;
+
+    height: auto;
+ 
+    padding: 2em 0;
+    
+    margin: 2em 0;
+      align-items: flex-start;
+    
+     gap: 1em;
+   
+  
+}
+
+/* En-tête de la section concept */
+.container section#concept header {
+    flex: 1 1 30%;
+    font-size: 1em;
+    margin-bottom: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+  
+    
+    
+}
+
+/* Cartes de la section concept */
+.container section#concept article {
+    background-color: white;
+   
+    flex: 1 1 27%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+     padding-top: 1em;
+     line-height: 1.5em;  
+}
+
+/* Premier paragraphe de la section concept */
+.container section#concept p:nth-child(1) {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+    color: hotpink;
+    
+}
+
+/* Icônes de la section concept */
+/* .container section#concept span {
+    color: yellowgreen;
+    font-size: 6em;
+    margin-bottom: 0.5em;
+       transition: 0.3s ease;
+        display: inline-block;
+}
+
+
+/* Effet au survol des icônes */
+/*.container section#concept span:hover {
+    color: orange;
+    transform: scale(1.2);
+} */
+
+.container section#concept span {
+    display: inline-block;
+    color: yellowgreen;
+    font-size: 6em;
+    margin-bottom: 0.5em;
+
+    animation: apparition 1s ease;
+}
+
+@keyframes apparition {
+
+  from {
+        transform: translateY(0) scale(1) rotate(0deg);
+    }
+
+    to {
+        transform: translateY(-15px) scale(1.2) rotate(90deg);
+    }
+    
+    /* from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 3;
+        transform: translateY(0);
+    }
+     */
+
+}
+
+
+
+/* Section ateliers : image à gauche et texte à droite */
+section#ateliers {
+    display: flex;
+    /* height: 350px; */
+    gap: 1em;
+
+    align-items: stretch;
+    
+        
+}
+
+/* Zone de l’image dans la section ateliers */
+section#ateliers figure {
+    flex: 1 0 50%;
+    margin: 0;
+    padding: 0;
+    height: 350px;
+
+}
+
+/* Image de la section ateliers */
+section#ateliers figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Texte de la section ateliers */
+section#ateliers article {
+  
+    padding: 1em;
+    flex: 1 1 35%;
+    display: flex;
+    flex-direction: column;
+
+    align-items: flex-start;
+}
+
+/* Bouton de la section ateliers */
+section#ateliers article a{
+    background-color: yellow;
+    color: black;
+    padding: 0.5em 1em;
+    border-radius: 5px;
+    
+}
+
+/* Petit texte d’introduction de la section ateliers */
+section#ateliers article p:nth-child(1) {
+    font-size: 1.2em;
+    margin-bottom: 1em;
+    color:goldenrod
+}
+
+/* Section tarifs : disposition des formules */
+section#tarifs {
+    display: flex;
+    gap: 2em;
+    padding: 4em 0;
+    margin: 2em 0;
+    align-items: stretch;
+    border-top: 1px solid #eee;
+}
+
+/* En-tête de la section tarifs */
+section#tarifs header {
+    flex: 1 1 25%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+/* Petit texte de la section tarifs */
+ section#tarifs header p {
+    color: goldenrod;
+
+} 
+
+/* Titre principal de la section tarifs */
+section#tarifs header h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Carte d’une formule tarifaire */
+section#tarifs article {
+    flex: 1 1 25%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 2em 1.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: white;
+}
+
+/* Mise en avant de la formule populaire */
+section#tarifs article.populaire {
+    border: 2px solid goldenrod;
+    transform: translateY(-15px);
+}
+
+/* Animation des cartes tarifaires */
+section#tarifs article {
+    transition: transform 0.3s ease, border 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Effet au survol des cartes tarifaires */
+section#tarifs article:hover {
+    border: 2px solid goldenrod;
+    transform: translateY(-15px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* Badge “Populaire” */
+section#tarifs article.populaire > p:first-child {
+    background-color: goldenrod;
+    color: white;
+    padding: 10px 15px;
+    border-radius: 20px;
+    font-size: 1em;
+    font-weight: bold;
+    
+}
+
+/* Titre des formules tarifaires */
+section#tarifs article h3 {
+    font-size: 1.5em;
+    margin: 0 0 1em;
+}
+
+/* Paragraphes des cartes tarifaires */
+section#tarifs article p {
+    margin: 0 0 1em;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Prix dans les cartes tarifaires */
+section#tarifs article p strong {
+    font-size: 2.5em;
+    color: goldenrod;
+}
+
+/* Liste des avantages des formules */
+section#tarifs article ul {
+    padding: 0;
+    margin: 1em 0 2em;
+    list-style: none;
+}
+
+/* Espacement entre les éléments de la liste */
+section#tarifs article li {
+    margin-bottom: 0.8em;
+}
+
+/* Ajout d’une coche avant chaque avantage */
+ section#tarifs article li::before {   
+    content: "✓ ";
+    color: goldenrod;
+    font-weight: bold;
+}
+
+/* Bouton “Choisir” des cartes tarifaires */
+section#tarifs article a {
+    margin-top: auto;
+    background-color: yellow;
+    color: black;
+    padding: 0.8em 1.2em;
+    border-radius: 5px;
+    font-weight: bold;
+    align-self: stretch;
+    text-align: center;
+}
+
+/* Section avis : disposition des témoignages */
+section#avis {
+    display: flex;
+    gap: 2em;
+    padding: 4em 0;
+    border-top: 1px solid #eee;
+}
+
+/* En-tête de la section avis */
+section#avis header {
+    flex: 1 1 25%;
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+/* Petit texte de la section avis */
+section#avis header p {
+    color: goldenrod;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+/* Titre de la section avis */
+section#avis header h2 {
+    font-size: 2em;
+    margin: 0;
+}
+
+/* Carte d’un avis client */
+section#avis article {
+    flex: 1 1 25%;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1.5em;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Texte du témoignage */
+section#avis article > p {
+    font-size: 1em;
+    line-height: 1.6;
+    padding: 0;
+    margin: 0 0 2em;
+    font-style: italic;
+}
+
+/* Zone image + nom de la personne */
+section#avis figure {
+    display: flex;
+     align-items: center; 
+    gap: 1em;
+    margin: 0;
+}
+
+/* Photo de profil dans les avis */
+section#avis figure img {
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-color: #ddd;
+}
+
+/* Texte sous / à côté de la photo */
+section#avis figcaption {
+    font-size: 0.95em;
+    line-height: 1.4;
+}
+
+/* Section contact : informations à gauche et formulaire à droite */
+section#contact {
+    display: flex;
+    min-height: 360px;
+    margin: 0;
+    padding: 0;
+    border-top: 1px solid #ddd;
+}
+
+/* Les deux colonnes de contact prennent chacune la moitié */
+section#contact article,
+section#contact form {
+    flex: 1 1 50%;
+}
+
+/* Bloc texte de la section contact avec image de fond */
+section#contact article {
+    background-image: url("../images/visiterl\'espace.png");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 4em 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Premier texte de la section contact */
+section#contact article > p:first-child {
+    color: goldenrod;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 2em;
+    margin: 0 0 1em;
+    padding: 0;
+}
+
+/* Titre de la section contact */
+section#contact article h2 {
+    font-size: 2em;
+    margin: 0 0 0.8em;
+}
+
+/* Paragraphes de la section contact */
+section#contact article p {
+    margin: 0 0 1.5em;
+    padding: 0;
+    line-height: 1.5;
+}
+
+/* Adresse dans la section contact */
+section#contact address {
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8em;
+}
+
+/* Ligne d’information dans l’adresse */
+section#contact address span {
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+
+/* Icônes dans l’adresse */
+section#contact address i {
+    color: goldenrod;
+    font-size: 1.2em;
+}
+
+/* Formulaire de contact */
+section#contact form {
+    background-color: rgb(69, 112, 32);
+    padding: 4em 5em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.2em;
+    align-content: center;
+    align-items: flex-start;
+    color: black;
+}
+
+/* Paragraphes qui contiennent les champs du formulaire */
+section#contact form p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Nom et email prennent chacun environ la moitié de la largeur */
+ section#contact form p:nth-child(1),
+section#contact form p:nth-child(2) {
+    flex: 1 1 calc(50% - 1em);
+} 
+
+/* Message + bouton prennent toute la largeur */
+section#contact form p:nth-child(3),
+section#contact form button {
+    flex: 1 1 100%;
+}
+
+/* Champs du formulaire */
+section#contact input,
+section#contact textarea {
+    width: 100%;
+    padding: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/* Zone de texte du formulaire */
+    section#contact textarea {
+    resize: vertical;
+    min-height: 120px;
+}
+
+/* Bouton d’envoi du formulaire */
+section#contact button {
+    border: none;
+    background-color: #f7b313;
+    color: black;
+    padding: 1em;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Effet au survol du bouton d’envoi */
+section#contact button:hover {
+    background-color: goldenrod;
+}
+
+/* Pied de page */
+footer{
+
+    background-color: aqua;
+
+    text-align: center;
+
+}
+
+/* Adaptation pour les écrans de taille moyenne */
+@media screen and (max-width: 900Px) {
+
+    /* Réduction de l’espace entre les liens du menu */
+    nav ul {
+        gap: 1em;
+    }
+
+    /* Réduction de la taille des liens du menu */
+    nav ul li a {
+        font-size: 1em;
+    }
+
+    /* Les sections principales peuvent passer à la ligne */
+    section#espaces,
+    .container section#concept,
+    section#tarifs,
+    section#avis {
+        flex-wrap: wrap;
+    }
+
+    /* Les en-têtes des sections prennent toute la largeur */
+    section#espaces header,
+    .container section#concept header,
+    section#tarifs header,
+    section#avis header {
+        flex: 1 1 100%;
+    }
+
+    /* Les cartes passent en deux colonnes */
+    section#espaces article,
+    .container section#concept article,
+    section#tarifs article,
+    section#avis article {
+        flex: 1 1 calc(50% - 1em);
+    }
+
+    /* La section ateliers passe en colonne */
+    section#ateliers {
+        flex-direction: column;
+    }
+
+    /* Hauteur de l’image des ateliers sur tablette */
+    section#ateliers figure {
+        flex: none;
+        height: 300px;
+    }
+
+    /* La section contact passe en colonne */
+    section#contact {
+        flex-direction: column;
+    }
+
+    /* Les deux blocs du contact prennent toute la largeur */
+    section#contact article,
+    section#contact form {
+        flex: none;
+        width: 100%;
+    }
+    
+}
+
+/* Adaptation pour les petits écrans / mobiles */
+@media screen and (max-width: 600Px) {
+
+    /* Réduction de la largeur du conteneur */
+    .container {
+        width: 90%;
+    }
+
+    /* La hauteur du fond devient flexible */
+    #header-bg {
+        height: auto;
+        min-height: 520px;
+    }
+
+    /* Le header passe en colonne */
+    header {
+        flex-direction: column;
+        gap: 1em;
+        padding-top: 1em;
+    }
+
+    /* Le menu devient vertical */
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8em;
+        margin-right: 0;
+    }
+
+    /* Réduction du logo sur mobile */
+    a.logo {
+        font-size: 1.7em;
+        margin-left: 0;
+    }
+
+    /* La section hero est centrée sur mobile */
+    section.hero {
+        margin-left: 0;
+        font-size: 1em;
+        padding: 3em 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* Taille du titre hero sur mobile */
+    section.hero h1 {
+        font-size: 2em;
+    }
+
+    /* Les sections passent en colonne sur mobile */
+    section#espaces,
+    .container section#concept,
+    section#tarifs,
+    section#avis {
+        flex-direction: column;
+    }
+
+    /* Les blocs prennent toute la largeur sur mobile */
+    section#espaces header,
+    section#espaces article,
+    .container section#concept header,
+    .container section#concept article,
+    section#tarifs header,
+    section#tarifs article,
+    section#avis header,
+    section#avis article {
+        flex: none;
+        width: 100%;
+    }
+
+    /* La carte populaire ne remonte plus sur mobile */
+    section#tarifs article.populaire {
+        transform: none;
+    }
+
+    /* La section ateliers reste en colonne sur mobile */
+    section#ateliers {
+        flex-direction: column;
+    }
+
+    /* Hauteur de l’image ateliers sur mobile */
+    section#ateliers figure {
+        height: 250px;
+    }
+
+    /* Contact en colonne sur mobile */
+    section#contact {
+        flex-direction: column;
+    }
+
+    /* Espacement du bloc texte contact sur mobile */
+    section#contact article {
+        padding: 3em 1.5em;
+    }
+
+    /* Espacement du formulaire sur mobile */
+    section#contact form {
+        padding: 3em 1.5em;
+    }
+
+    /* Tous les champs du formulaire prennent toute la largeur */
+    section#contact form p:nth-child(1),
+    section#contact form p:nth-child(2),
+    section#contact form p:nth-child(3),
+    section#contact form button {
+        flex: 1 1 100%;
+    }
+
+    /* Espacement du footer sur mobile */
+    footer {
+        padding: 2em 1em;
+    }
+
+    
+}
+
+
+
+
+/* partie animation et autres */
+

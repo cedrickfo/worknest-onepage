@@ -1,0 +1,36 @@
+body { /* Modifications : la couleur de fond de page - la police - l'unité utilisée pour la taille de la police  */
+	background-color:#fff;
+	color:black;
+	font-family:Serif;
+	font-size:10pt;
+}
+
+#conteneur{
+	width:100%;
+		margin:0;
+	border:none;
+}
+
+nav, footer { /* Les éléments qui ne seront pas imprimés  */
+	display:none;
+}
+
+header { 
+	background:none;/* On s'assure que le bckground ne s'imprime pas  */
+
+	
+}
+
+article{
+	background:none;
+}
+
+figure{
+    display: none;
+}
+
+/*Ajout de l'URL du lien EXTERNE UNIQUEMENT à la suite de celui-ci, entre parenthèses */
+  a[href^="http"]::after {
+        content: " (" attr(href) ")";
+    } 
+
